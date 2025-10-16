@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+</body>
+
+<form id="survey-form">
+    <label id="name-label" for="name">Name: </label><input id="name" type="text" required="true"
+        placeholder="Enter Name" /><br />
+    <label id="email-label" for="email">Email: </label><input id="email" type="email" required="true"
+        placeholder="Enter Email" /><br />
+    <label id="number-label" for="number">Number: </label><input id="number" min="11" max="3000" type="number"
+        required="true" placeholder="Number" /><br />
+
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="fulltime">Full Time Job</option>
+    </select>
+
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <input type="radio" id="definitely" name="recommend" value="definitely">
+    <label for="definitely">Definitely</label><br>
+    <input type="radio" id="maybe" name="recommend" value="maybe">
+    <label for="maybe">Maybe</label><br>
+    <input type="radio" id="notSure" name="recommend" value="notSure">
+    <label for="notSure">Not Sure</label>
+    <br />
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select id="fav_dropdown">
+        <option value="challenges">Challenges</option>
+        <option value="lessons">Lessons</option>
+    </select>
+    <br />
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <input type="checkbox" id="fe_projects" name="fe_projects" value="fe_projects">
+    <label for="fe_projects">Front-end Projects</label><br>
+    <input type="checkbox" id="be_lessons" name="be_lessons" value="be_lessons">
+    <label for="be_lessons">Backend Lessons</label><br>
+    <input type="checkbox" id="challeges" name="challeges" value="challeges">
+    <label for="challeges">Challenges</label>
+    <br />
+    <p>Any comments or suggestions?</p>
+    <textarea name="message" rows="10" cols="30" placeholder="Enter Comments here..."></textarea>
+    </br>
+    <button type="submit" value="Submit" id="submit">
+        Submit
+    </button>
+</form>
+
+</html>
