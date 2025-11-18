@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form on Mobile Games</h1>
+    <p id="description">The following is a survey regarding your experience with Mobile Games.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" required placeholder="Enter Name" />
+
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" required placeholder="Enter Email" />
+
+        <label id="number-label" for="number">Contact Number: </label>
+        <input id="number" min="11" max="3000" type="number" required placeholder="Number" />
+
+        <p>Which best describes your current professional status?</p>
+        <select id="dropdown">
+            <option value="student">Undergraduate</option>
+            <option value="fulltime">Master's</option>
+            <option value="fulltime">Doctoral</option>
+            <option value="fulltime">Postdoctoral</option>
+            <option value="fulltime">Postdoctoral</option>
+        </select>
+
+        <p>Would you recommend Mobile Games to a friend?</p>
+        <div class="radio-group">
+            <input type="radio" id="definitely" name="recommend" value="definitely">
+            <label for="definitely">Yes</label>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">No</label>
+            <input type="radio" id="notSure" name="recommend" value="notSure">
+            <label for="notSure">Not Sure</label>
+        </div>
+
+        <p>What is your favorite feature of Mobile Games?</p>
+        <select id="fav_dropdown">
+            <option value="challenges">Challenges</option>
+            <option value="lessons">Graphics</option>
+            <option value="lessons">Sound</option>
+            <option value="lessons">Gameplay</option>
+            <option value="lessons">Story</option>
+            <option value="lessons">Other</option>
+        </select>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="challenges" name="challenges" value="challenges">
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" id="graphics" name="graphics" value="graphics">
+            <label for="graphics">Graphics</label>
+            <input type="checkbox" id="sound" name="sound" value="sound">
+            <label for="sound">Sound</label>
+            <input type="checkbox" id="gameplay" name="gameplay" value="gameplay">
+            <label for="gameplay">Gameplay</label>
+            <input type="checkbox" id="story" name="story" value="story">
+            <label for="story">Story</label>
+            <input type="checkbox" id="other" name="other" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <p>Any comments or suggestions?</p>
+        <textarea name="message" rows="10" cols="30" placeholder="Enter your comments here..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
