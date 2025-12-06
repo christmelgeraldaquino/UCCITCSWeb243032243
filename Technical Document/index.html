@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VS Code Shortcuts & Emmet Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>VS Code & Emmet</h1>
+    </header>
+    <a href="#Introduction_to_VS_Code" class="nav-link">Introduction to VS Code</a>
+    <a href="#VS_Code_Shortcuts" class="nav-link">VS Code Shortcuts</a>
+    <a href="#Introduction_to_Emmet" class="nav-link">Introduction to Emmet</a>
+    <a href="#Common_Emmet_Abbreviations" class="nav-link">Common Emmet Abbreviations</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_VS_Code">
+      <header>
+        <h2>Introduction to VS Code</h2>
+      </header>
+      <p>
+        Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It is one of the most popular code editors used by developers worldwide due to its lightweight design, extensive customization options, and powerful features.
+      </p>
+      <p>
+        VS Code supports a wide range of programming languages and comes with built-in support for JavaScript, TypeScript, HTML, CSS, and many more. It features IntelliSense for code completion, debugging capabilities, Git integration, and a vast ecosystem of extensions.
+      </p>
+      <p>
+        One of the key advantages of VS Code is its keyboard shortcuts system, which allows developers to work more efficiently without constantly switching between mouse and keyboard. Mastering these shortcuts can significantly improve your coding productivity.
+      </p>
+      <p>
+        VS Code is available for Windows, macOS, and Linux, making it accessible to developers on any platform. It's built on Electron and uses the same editor core as Azure DevOps.
+      </p>
+      <p>
+        To get started with VS Code, you can download it from the official website. Once installed, you can customize it with themes, extensions, and keyboard shortcuts to match your workflow preferences.
+      </p>
+      <code>
+// Example: Opening VS Code from terminal
+code .                    // Opens current directory
+code filename.js          // Opens specific file
+code -r .                 // Reopens current window
+      </code>
+      <p>
+        VS Code's Command Palette (accessed with <code>Ctrl+Shift+P</code> on Windows/Linux or <code>Cmd+Shift+P</code> on Mac) is a powerful feature that allows you to access almost any command or setting in the editor.
+      </p>
+    </section>
+
+    <section class="main-section" id="VS_Code_Shortcuts">
+      <header>
+        <h2>VS Code Shortcuts</h2>
+      </header>
+      <p>
+        Mastering VS Code keyboard shortcuts can significantly improve your coding productivity. Here are the most essential shortcuts organized by category.
+      </p>
+      <p>
+        <strong>File and Editor Navigation:</strong>
+      </p>
+      <ul>
+        <li><code>Ctrl+P</code> (Windows/Linux) or <code>Cmd+P</code> (Mac) - Quick Open: Quickly open files by name</li>
+        <li><code>Ctrl+Shift+P</code> (Windows/Linux) or <code>Cmd+Shift+P</code> (Mac) - Command Palette: Access all commands</li>
+        <li><code>Ctrl+Tab</code> - Switch between open editors</li>
+        <li><code>Ctrl+\</code> - Split editor</li>
+        <li><code>Ctrl+1, Ctrl+2, Ctrl+3</code> - Focus on editor groups 1, 2, or 3</li>
+      </ul>
+      <p>
+        <strong>Code Navigation:</strong>
+      </p>
+      <code>
+Ctrl+G              // Go to Line
+Ctrl+Shift+O       // Go to Symbol in File
+Ctrl+T              // Go to Symbol in Workspace
+F12                 // Go to Definition
+Alt+F12             // Peek Definition
+Shift+F12           // Go to References
+Ctrl+Shift+F        // Search in Files
+Ctrl+F              // Find in File
+Ctrl+H              // Replace in File
+      </code>
+      <p>
+        <strong>Cursor Movement:</strong>
+      </p>
+      <ul>
+        <li><code>Ctrl+Left/Right Arrow</code> - Move cursor by word</li>
+        <li><code>Home/End</code> - Move to beginning/end of line</li>
+        <li><code>Ctrl+Home/End</code> - Move to top/bottom of file</li>
+        <li><code>Alt+Up/Down Arrow</code> - Move line up/down</li>
+      </ul>
+      <p>
+        <strong>Text Selection and Editing:</strong>
+      </p>
+      <code>
+Ctrl+D              // Select word at cursor (repeat to select next occurrence)
+Ctrl+Shift+L        // Select all occurrences of current selection
+Ctrl+L              // Select entire line
+Ctrl+Shift+K        // Delete line
+Ctrl+Enter          // Insert line below
+Ctrl+Shift+Enter    // Insert line above
+Ctrl+]              // Indent line
+Ctrl+[              // Outdent line
+      </code>
+      <p>
+        <strong>Multi-Cursor Editing:</strong>
+      </p>
+      <ul>
+        <li><code>Alt+Click</code> - Add cursor at click position</li>
+        <li><code>Ctrl+Alt+Up/Down</code> - Add cursor above/below</li>
+        <li><code>Ctrl+Shift+Alt+Up/Down</code> - Add cursor to all occurrences</li>
+        <li><code>Ctrl+U</code> - Undo last cursor operation</li>
+      </ul>
+      <p>
+        <strong>File Operations:</strong>
+      </p>
+      <code>
+Ctrl+N              // New File
+Ctrl+O              // Open File
+Ctrl+S              // Save
+Ctrl+Shift+S        // Save As
+Ctrl+K S            // Save All
+Ctrl+W              // Close Editor
+      </code>
+      <p>
+        <strong>Explorer and Sidebar:</strong>
+      </p>
+      <ul>
+        <li><code>Ctrl+Shift+E</code> - Focus on Explorer</li>
+        <li><code>Ctrl+B</code> - Toggle sidebar visibility</li>
+        <li><code>Ctrl+`</code> - Toggle terminal</li>
+        <li><code>Ctrl+J</code> - Toggle panel (terminal, problems, etc.)</li>
+        <li><code>Ctrl+,</code> - Open Settings</li>
+        <li><code>Ctrl+K Ctrl+S</code> - Open Keyboard Shortcuts</li>
+      </ul>
+      <p>
+        These shortcuts allow you to work efficiently without constantly switching between mouse and keyboard, significantly improving your coding speed and workflow.
+      </p>
+    </section>
+
+    <section class="main-section" id="Introduction_to_Emmet">
+      <header>
+        <h2>Introduction to Emmet</h2>
+      </header>
+      <p>
+        Emmet is a web developer's toolkit that can greatly improve your HTML and CSS workflow. It's built into VS Code by default and allows you to write HTML and CSS using a shorthand syntax that expands into full code.
+      </p>
+      <p>
+        Emmet uses abbreviations that look like CSS selectors, which you can expand into full HTML or CSS code. This dramatically speeds up your coding process, especially when creating repetitive structures.
+      </p>
+      <p>
+        To use Emmet in VS Code, simply type an abbreviation and press <code>Tab</code> or <code>Ctrl+E</code> (Windows/Linux) or <code>Cmd+E</code> (Mac) to expand it. Emmet works in HTML, CSS, JavaScript, JSX, and other markup languages.
+      </p>
+      <p>
+        Here's a simple example: Type <code>div.container</code> and press Tab, and it expands to:
+      </p>
+      <code>
+&lt;div class="container"&gt;&lt;/div&gt;
+      </code>
+      <p>
+        Emmet understands HTML structure, CSS properties, and can generate complex nested structures with just a few keystrokes. It's particularly powerful when creating layouts, forms, and lists.
+      </p>
+      <p>
+        <strong>Key Emmet Features:</strong>
+      </p>
+      <ul>
+        <li><strong>Element Generation:</strong> Create HTML elements quickly</li>
+        <li><strong>Nesting:</strong> Use <code>&gt;</code> for child elements and <code>+</code> for siblings</li>
+        <li><strong>Attributes:</strong> Add classes, IDs, and other attributes easily</li>
+        <li><strong>Multiplication:</strong> Use <code>*</code> to repeat elements</li>
+        <li><strong>Numbering:</strong> Use <code>$</code> for automatic numbering</li>
+        <li><strong>Text:</strong> Add text content with <code>{}</code></li>
+      </ul>
+      <p>
+        Emmet is one of the most powerful productivity tools for web developers, and learning it can save you hours of typing repetitive code.
+      </p>
+    </section>
+
+    <section class="main-section" id="Common_Emmet_Abbreviations">
+      <header>
+        <h2>Common Emmet Abbreviations</h2>
+      </header>
+      <p>
+        Here are some of the most commonly used Emmet abbreviations that will help you write HTML and CSS faster.
+      </p>
+      <p>
+        <strong>Basic HTML Structure:</strong>
+      </p>
+      <code>
+!                    // HTML5 boilerplate
+div                  // &lt;div&gt;&lt;/div&gt;
+div.container        // &lt;div class="container"&gt;&lt;/div&gt;
+div#header           // &lt;div id="header"&gt;&lt;/div&gt;
+div.container#main    // &lt;div class="container" id="main"&gt;&lt;/div&gt;
+      </code>
+      <p>
+        <strong>Nesting and Siblings:</strong>
+      </p>
+      <code>
+div>p                // &lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+div>p>span           // Nested: div > p > span
+div+p                // Siblings: div and p side by side
+div.container>ul>li  // Container with list
+      </code>
+      <p>
+        <strong>Multiplication and Numbering:</strong>
+      </p>
+      <code>
+ul>li*5              // 5 list items
+ul>li.item$*5        // Numbered: item1, item2, item3...
+div.box$*3           // 3 divs with classes box1, box2, box3
+      </code>
+      <p>
+        <strong>Attributes:</strong>
+      </p>
+      <ul>
+        <li><code>a[href="#"]</code> - Link with href attribute</li>
+        <li><code>img[src="image.jpg"][alt="description"]</code> - Image with multiple attributes</li>
+        <li><code>input[type="text"][placeholder="Enter text"]</code> - Input with attributes</li>
+        <li><code>div[data-id="123"]</code> - Custom data attributes</li>
+      </ul>
+      <p>
+        <strong>Text Content:</strong>
+      </p>
+      <code>
+p{Hello World}       // &lt;p&gt;Hello World&lt;/p&gt;
+a{Click here}        // &lt;a href="#"&gt;Click here&lt;/a&gt;
+h1{Main Title}+p{Description}
+      </code>
+      <p>
+        <strong>Complex Examples:</strong>
+      </p>
+      <code>
+nav>ul>li*5>a[href="#"]{Link $}
+// Creates navigation with 5 links
+
+form>input[type="text"][name="username"]+input[type="password"][name="password"]+button{Submit}
+// Creates a login form
+
+div.container>header#header+main#main>section*3>h2{Section $}+p{Lorem ipsum}+footer#footer
+// Creates a complete page structure
+      </code>
+      <p>
+        <strong>CSS Abbreviations:</strong>
+      </p>
+      <ul>
+        <li><code>m10</code> - <code>margin: 10px;</code></li>
+        <li><code>p20</code> - <code>padding: 20px;</code></li>
+        <li><code>w100</code> - <code>width: 100px;</code></li>
+        <li><code>h50</code> - <code>height: 50px;</code></li>
+        <li><code>bgc#fff</code> - <code>background-color: #fff;</code></li>
+        <li><code>d:f</code> - <code>display: flex;</code></li>
+      </ul>
+      <p>
+        Practice these Emmet abbreviations regularly, and you'll find yourself writing HTML and CSS much faster. Start with simple abbreviations and gradually work your way up to more complex structures.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
